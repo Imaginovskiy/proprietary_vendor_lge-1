@@ -435,6 +435,30 @@ PRODUCT_COPY_FILES += \
     vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_zsl_video_imx258_wide_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_zsl_video_imx258_wide_imtech.so \
     vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_zsl_video_imx258_wide_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_zsl_video_imx258_wide_lgit.so \
     vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_zsl_video_imx298.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_zsl_video_imx298.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_4k_imx258_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_4k_imx258_imtech.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_4k_imx258_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_4k_imx258_lgit.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_4k_imx258_wide_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_4k_imx258_wide_imtech.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_4k_imx258_wide_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_4k_imx258_wide_lgit.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_video_imx258_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_video_imx258_imtech.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_video_imx258_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_video_imx258_lgit.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_video_imx258_wide_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_video_imx258_wide_imtech.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_video_imx258_wide_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_video_imx258_wide_lgit.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_zsl_imx258_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_zsl_imx258_imtech.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_zsl_imx258_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_zsl_imx258_lgit.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_zsl_imx258_wide_imtech.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_zsl_imx258_wide_imtech.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_ae_parameter_binning_zsl_imx258_wide_lgit.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_ae_parameter_binning_zsl_imx258_wide_lgit.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_imtech_binning_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_imtech_binning_4k.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_imtech_binning_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_imtech_binning_video.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_imtech_binning_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_imtech_binning_zsl.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_lgit_binning_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_lgit_binning_4k.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_lgit_binning_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_lgit_binning_video.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_lgit_binning_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_lgit_binning_zsl.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_wide_imtech_binning_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_wide_imtech_binning_4k.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_wide_imtech_binning_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_wide_imtech_binning_video.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_wide_imtech_binning_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_wide_imtech_binning_zsl.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_wide_lgit_binning_4k.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_wide_lgit_binning_4k.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_wide_lgit_binning_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_wide_lgit_binning_video.so \
+    vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_imx258_wide_lgit_binning_zsl.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_imx258_wide_lgit_binning_zsl.so \
     vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_2P7_4k_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_2P7_4k_preview.so \
     vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_2P7_4k_video.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_2P7_4k_video.so \
     vendor/lge/g6-common/proprietary/vendor/lib/liblg_awb_parameter_2P7_default_preview.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblg_awb_parameter_2P7_default_preview.so \
