@@ -61,6 +61,13 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.verizon.provider.xml:system/etc/permissions/com.verizon.provider.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/qti-vzw-ims-internal.xml:system/etc/permissions/qti-vzw-ims-internal.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/vzw_sso_permissions.xml:system/etc/permissions/vzw_sso_permissions.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.ims.jansky.xml:system/etc/permissions/com.lge.ims.jansky.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.ims.media.evs.xml:system/etc/permissions/com.lge.ims.media.evs.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.ims.mmpfservice.xml:system/etc/permissions/com.lge.ims.mmpfservice.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.ims.rcs.xml:system/etc/permissions/com.lge.ims.rcs.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.ims.rtt.xml:system/etc/permissions/com.lge.ims.rtt.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.ims.xml:system/etc/permissions/com.lge.ims.xml \
+    vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.server.ims.xml:system/etc/permissions/com.lge.server.ims.xml \
     vendor/lge/msm8996-common/proprietary/lib/hw/lgkm.default.so:system/lib/hw/lgkm.default.so \
     vendor/lge/msm8996-common/proprietary/lib/hw/lgkm.msm8996.so:system/lib/hw/lgkm.msm8996.so \
     vendor/lge/msm8996-common/proprietary/lib/liblgkm.so:system/lib/liblgkm.so \
@@ -69,6 +76,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
     vendor/lge/msm8996-common/proprietary/lib64/libaptX_encoder.so:system/lib64/libaptX_encoder.so \
     vendor/lge/msm8996-common/proprietary/lib64/liblgkm.so:system/lib64/liblgkm.so \
+    vendor/lge/msm8996-common/proprietary/lib64/vendor.lge.hardware.vss_ims@1.0.so:system/lib64/vendor.lge.hardware.vss_ims@1.0.so \
     vendor/lge/msm8996-common/proprietary/vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/default/default/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/default/default/mcfg_hw.mbn \
     vendor/lge/msm8996-common/proprietary/vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/ss/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45/ss/mcfg_hw.mbn \
     vendor/lge/msm8996-common/proprietary/vendor/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/ss/mcfg_hw.mbn:$(TARGET_COPY_OUT_VENDOR)/firmware/image/modem_pr/mcfg/configs/mcfg_hw/generic/common/mdm9x45_/ss/mcfg_hw.mbn \
@@ -121,6 +129,8 @@ PRODUCT_PACKAGES += \
 
 ifeq ($(QCPATH),)
 PRODUCT_COPY_FILES += \
+    vendor/lge/msm8996-common/proprietary/bin/imswmsproxy:system/bin/imswmsproxy \
+    vendor/lge/msm8996-common/proprietary/bin/logger_ims_packet.sh:system/bin/logger_ims_packet.sh \
     vendor/lge/msm8996-common/proprietary/etc/permissions/cneapiclient.xml:system/etc/permissions/cneapiclient.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.qti.snapdragon.sdk.display.xml:system/etc/permissions/com.qti.snapdragon.sdk.display.xml \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.quicinc.cne.xml:system/etc/permissions/com.quicinc.cne.xml \
@@ -133,12 +143,18 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/framework/com.qti.snapdragon.sdk.display.jar:system/framework/com.qti.snapdragon.sdk.display.jar \
     vendor/lge/msm8996-common/proprietary/framework/com.quicinc.cne.api-V1.0-java.jar:system/framework/com.quicinc.cne.api-V1.0-java.jar \
     vendor/lge/msm8996-common/proprietary/framework/com.quicinc.cne.jar:system/framework/com.quicinc.cne.jar \
+    vendor/lge/msm8996-common/proprietary/framework/ims-common.jar:system/framework/ims-common.jar \
     vendor/lge/msm8996-common/proprietary/lib/com.qualcomm.qti.imscmservice@1.0.so:system/lib/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imscamera.so:system/lib/lib-imscamera.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imsvideocodec.so:system/lib/lib-imsvideocodec.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imsvtextutils.so:system/lib/lib-imsvtextutils.so \
     vendor/lge/msm8996-common/proprietary/lib/lib-imsvtutils.so:system/lib/lib-imsvtutils.so \
     vendor/lge/msm8996-common/proprietary/lib/libdiag_system.so:system/lib/libdiag_system.so \
+    vendor/lge/msm8996-common/proprietary/lib/libims.so:system/lib/libims.so \
+    vendor/lge/msm8996-common/proprietary/lib/libimsmmpf.so:system/lib/libimsmmpf.so \
+    vendor/lge/msm8996-common/proprietary/lib/libimsvtjni.so:system/lib/libimsvtjni.so \
+    vendor/lge/msm8996-common/proprietary/lib/libimswms.so:system/lib/libimswms.so \
+    vendor/lge/msm8996-common/proprietary/lib/vendor.lge.hardware.vss_ims@1.0.so:system/lib/endor.lge.hardware.vss_ims@1.0.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libdualcameraddm.so:$(TARGET_COPY_OUT_VENDOR)/lib/libdualcameraddm.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libjni_dualcamera.so:$(TARGET_COPY_OUT_VENDOR)/lib/libjni_dualcamera.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/liblgcamera_jni.so:$(TARGET_COPY_OUT_VENDOR)/lib/liblgcamera_jni.so \
@@ -153,6 +169,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib/vendor.qti.gnss@1.0.so:system/lib/vendor.qti.gnss@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib/vendor.qti.hardware.qdutils_disp@1.0.so:system/lib/vendor.qti.hardware.qdutils_disp@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib/vendor.qti.imsrtpservice@1.0.so:system/lib/vendor.qti.imsrtpservice@1.0.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libvss_ims_qcci.so:system/lib/libvss_ims_qcci.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libvssims-impl.so:system/lib/libvssims-impl.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/vendor.lge.hardware.vss_ims@1.0_vendor.so:system/lib/vendor.lge.hardware.vss_ims@1.0_vendor.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libvss_ims_qcci.so:system/lib64/libvss_ims_qcci.so: \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libvssims-impl.so:system/lib64/libvssims-impl.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/vendor.lge.hardware.vss_ims@1.0_vendor.so:system/lib64/vendor.lge.hardware.vss_ims@1.0_vendor.so \
     vendor/lge/msm8996-common/proprietary/lib64/com.qualcomm.qti.imscmservice@1.0.so:system/lib64/com.qualcomm.qti.imscmservice@1.0.so \
     vendor/lge/msm8996-common/proprietary/lib64/lib-imscamera.so:system/lib64/lib-imscamera.so \
     vendor/lge/msm8996-common/proprietary/lib64/lib-imsvideocodec.so:system/lib64/lib-imsvideocodec.so \
@@ -179,6 +201,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/bin/hw/vendor.display.color@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.display.color@1.0-service \
     vendor/lge/msm8996-common/proprietary/vendor/bin/hw/vendor.qti.gnss@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.gnss@1.0-service \
     vendor/lge/msm8996-common/proprietary/vendor/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti:$(TARGET_COPY_OUT_VENDOR)/bin/hw/vendor.qti.hardware.qdutils_disp@1.0-service-qti \
+    vendor/lge/msm8996-common/proprietary/vendor/bin/hw/vendor.lge.hardware.vss_ims@1.0-service:$(TARGET_COPY_OUT_VENDOR)/bin/hw/endor.lge.hardware.vss_ims@1.0-service \
     vendor/lge/msm8996-common/proprietary/vendor/bin/ims_rtp_daemon:$(TARGET_COPY_OUT_VENDOR)/bin/ims_rtp_daemon \
     vendor/lge/msm8996-common/proprietary/vendor/bin/imsdatadaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsdatadaemon \
     vendor/lge/msm8996-common/proprietary/vendor/bin/imsqmidaemon:$(TARGET_COPY_OUT_VENDOR)/bin/imsqmidaemon \
@@ -400,6 +423,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/hw/sound_trigger.primary.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/sound_trigger.primary.msm8996.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/hw/vendor.qti.gnss@1.0-impl.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vendor.qti.gnss@1.0-impl.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/hw/vulkan.msm8996.so:$(TARGET_COPY_OUT_VENDOR)/lib64/hw/vulkan.msm8996.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/hw/vendor.lge.hardware.vss_ims@1.0-impl.so:system/lib64/hw/vendor.lge.hardware.vss_ims@1.0-impl.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/lib-dplmedia.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-dplmedia.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/lib-imsSDP.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imsSDP.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/lib-imscmservice.so:$(TARGET_COPY_OUT_VENDOR)/lib64/lib-imscmservice.so \
