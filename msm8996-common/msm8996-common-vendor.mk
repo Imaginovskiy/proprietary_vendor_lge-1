@@ -71,6 +71,12 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/lib/hw/lgkm.default.so:system/lib/hw/lgkm.default.so \
     vendor/lge/msm8996-common/proprietary/lib/hw/lgkm.msm8996.so:system/lib/hw/lgkm.msm8996.so \
     vendor/lge/msm8996-common/proprietary/lib/liblgkm.so:system/lib/liblgkm.so \
+    vendor/lge/msm8996-common/proprietary/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
+    vendor/lge/msm8996-common/proprietary/lib/libts_face_beautify_hal.so:system/lib/libts_face_beautify_hal.so \
+    vendor/lge/msm8996-common/proprietary/lib/libts_face_beautify_jni.so:system/lib/libts_face_beautify_jni.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libts_detected_face_jni.so:system/lib64/libts_detected_face_jni.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libts_face_beautify_hal.so:system/lib64/libts_face_beautify_hal.so \
+    vendor/lge/msm8996-common/proprietary/lib64/libts_face_beautify_jni.so:system/lib64/libts_face_beautify_jni.so \
     vendor/lge/msm8996-common/proprietary/lib64/hw/lgkm.default.so:system/lib64/hw/lgkm.default.so \
     vendor/lge/msm8996-common/proprietary/lib64/hw/lgkm.msm8996.so:system/lib64/hw/lgkm.msm8996.so \
     vendor/lge/msm8996-common/proprietary/lib64/libaptXHD_encoder.so:system/lib64/libaptXHD_encoder.so \
@@ -107,6 +113,10 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libtrueportrait.so:$(TARGET_COPY_OUT_VENDOR)/lib/libtrueportrait.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib/libubifocus.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib/libpcas_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib/libpcas_vendor.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_detected_face_hal.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib/libts_face_beautify_hal.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libts_detected_face_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_detected_face_hal.so \
+    vendor/lge/msm8996-common/proprietary/vendor/lib64/libts_face_beautify_hal.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libts_face_beautify_hal.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libpcas_vendor.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libpcas_vendor.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libhexagon_nn_controller.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libhexagon_nn_controller.so \
     vendor/lge/msm8996-common/proprietary/vendor/lib64/libubifocus.so:$(TARGET_COPY_OUT_VENDOR)/lib64/libubifocus.so \
