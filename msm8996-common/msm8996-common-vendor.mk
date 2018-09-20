@@ -70,6 +70,7 @@ PRODUCT_COPY_FILES += \
     vendor/lge/msm8996-common/proprietary/etc/permissions/com.lge.server.ims.xml:system/etc/permissions/com.lge.server.ims.xml \
     vendor/lge/msm8996-common/proprietary/lib/hw/lgkm.default.so:system/lib/hw/lgkm.default.so \
     vendor/lge/msm8996-common/proprietary/lib/hw/lgkm.msm8996.so:system/lib/hw/lgkm.msm8996.so \
+    vendor/lge/msm8996-common/proprietary/lib/libSJFingerDetect.so:system/lib/libSJFingerDetect.so \
     vendor/lge/msm8996-common/proprietary/lib/liblgkm.so:system/lib/liblgkm.so \
     vendor/lge/msm8996-common/proprietary/lib/libts_detected_face_jni.so:system/lib/libts_detected_face_jni.so \
     vendor/lge/msm8996-common/proprietary/lib/libts_face_beautify_hal.so:system/lib/libts_face_beautify_hal.so \
